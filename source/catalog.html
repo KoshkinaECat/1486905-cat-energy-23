@@ -34,19 +34,20 @@
     </nav>
   </header>
 
-  <main class="page-catalog">
-    <section class="catalog">
+<main class="page-catalog">
+  <section class="catalog">
     <h1 class="catalog__header">Каталог продукции</h1>
-    <article class="catalog__product">
-      <div class="catalog__details">
-        <h3 class="catalog__info">Cat Energy PRO 500 г</h3>
-        <img class="catalog__image catalog__image--chiken500" src="../source/img/chiken500.png" width="68" height="86" alt="Вкус курица 500 грамм">
-        <p class="catalog__description catalog__description--weight">Масса 500 г</p>
-        <p class="catalog__description catalog__description--taste">Вкус Курица</p>
-        <p class="catalog__description catalog__description--cost">Цена 700 Р.</p>
-        <a class="catalog__link" href="#">Заказать</a>
-      </div>
-    </article>
+      <article class="catalog__product">
+        <div class="catalog__details">
+          <h2 class="catalog__header visually-hidden">Демонстрация товаров</h2>
+          <h3 class="catalog__info">Cat Energy PRO 500 г</h3>
+          <img class="catalog__image catalog__image--chiken500" src="../source/img/chiken500.png" width="68" height="86" alt="Вкус курица 500 грамм">
+          <p class="catalog__description catalog__description--weight">Масса 500 г</p>
+          <p class="catalog__description catalog__description--taste">Вкус Курица</p>
+          <p class="catalog__description catalog__description--cost">Цена 700 Р.</p>
+          <a class="catalog__link" href="#">Заказать</a>
+        </div>
+      </article>
 
     <article class="catalog__product">
       <div class="catalog__details">
@@ -116,55 +117,47 @@
 
     <article class="catalog-all-products">
       <p class="catalog-all-products__plus">+</p>
-      <h2 class="catalog-all-products__header">Показать еще 100500 товаров</h2>
+      <h3 class="catalog-all-products__header">Показать еще 100500 товаров</h2>
       <p class="catalog-all-products__promo">На самом деле вкусов гораздо больше!</p>
       <a class="catalog-all-products__link" href="#">Показать все</a>
     </article>
   </section>
 
   <section class="additional-products">
-    <h1 class="additional-products__header">Дополнительные товары</h1>
-    <article class="additional-products__article">
-    <h2 class="additional-products__item">Сахарозаменитель</h2>
-    <p class="additional-products__weight">1 упаковка(100 г)</p>
-    <p class="additional-products__cost">200 P.</p>
-    <a class="additional-products__link" href="#">Заказать</a>
-  </article>
-
-  <article class="additional-products__article">
-    <h2 class="additional-products__item">Питьевая вода</h2>
-    <p class="additional-products__weight">5 литров</p>
-    <p class="additional-products__cost">50 P.</p>
-    <a class="additional-products__link" href="#">Заказать</a>
-  </article>
-
-  <article class="additional-products__article">
-    <h2 class="additional-products__item">Молоко</h2>
-    <p class="additional-products__weight">1 литр</p>
-    <p class="additional-products__cost">100 P.</p>
-    <a class="additional-products__link" href="#">Заказать</a>
-  </article>
-
-  <article class="additional-products__article">
-    <h2 class="additional-products__item">Витамины</h2>
-    <p class="additional-products__weight">1 упаковка(30 г.)</p>
-    <p class="additional-products__cost">300 P.</p>
-    <a class="additional-products__link" href="#">Заказать</a>
-  </article>
-
+    <h2 class="additional-products__header">Дополнительные товары</h1>
+    <table class="additional-products__table">
+    <tr>
+      <td>Сахарозаменитель</td>
+      <td>1 упаковка(100 г)</td>
+      <td>200 P.</td>
+      <td><a class="additional-products__link" href="#">Заказать</a></td>
+    </tr>
+    <tr>
+      <td>Питьевая вода</td>
+      <td>5 литров</td>
+      <td>50 P.</td>
+      <td><a class="additional-products__link" href="#">Заказать</a></td>
+    </tr>
+    <tr>
+      <td>Молоко</td>
+      <td>1 литр</td>
+      <td>100 P.</td>
+      <td><a class="additional-products__link" href="#">Заказать</a></td>
+    </tr>
+    <tr>
+      <td>Витамины</td>
+      <td>1 упаковка(30 г.)</td>
+      <td>300 P.</td>
+      <td><a class="additional-products__link" href="#">Заказать</a></td>
+    </tr>
+    </table>
   </section>
-
   <section class="gift">
-    <h2 class="gift__header visually-hidden">Промо: закажите все товары и получите чехол для кота в подарок
-    </h2>
-    <p class="girt__promo">Закажите все и получите чехол для кота в подарок!</p>
-    <img class="girt__background" src="../source/img/gift-photo.png" width="280" height="289" alt="Кот в чехле">
+    <h2 class="gift__header visually-hidden">Промо: закажите все товары и получите чехол для кота в подарок</h2>
+      <p class="gift__promo">Закажите все и получите чехол для кота в подарок!</p>
+        <img class="gift__background" src="../source/img/gift-photo.png" width="280" height="289" alt="Кот в чехле">
   </section>
-
-
-
-  </main>
-
+</main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <section class="page-footer__cooperation">
