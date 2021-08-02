@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
+  <link href="../source/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="#">
       <img src="../source/img/logo.svg" width="34" height="38" alt="Логотип Кэт энерджи">
-      <img src="../source/img/logo-letter.svg" width="101" height="18" alt="Надпись Кэт энерджи">
+      <img class="page-header__logo-text" src="../source/img/logo-letter.svg" width="101" height="18" alt="Надпись Кэт энерджи">
     </a>
+    <button class="page-header__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -35,8 +37,9 @@
   </header>
 
   <main class="page-catalog">
+    <h1 class="catalog__header visually-hidden">Каталог продукции</h1>
     <section class="catalog">
-    <h1 class="catalog__header">Каталог продукции</h1>
+    <h2 class="catalog__header">Каталог продукции</h2>
     <article class="catalog__product">
       <div class="catalog__details">
         <h3 class="catalog__info">Cat Energy PRO 500 г</h3>
@@ -123,30 +126,30 @@
   </section>
 
   <section class="additional-products">
-    <h1 class="additional-products__header">Дополнительные товары</h1>
+    <h2 class="additional-products__header">Дополнительные товары</h2>
     <article class="additional-products__article">
-    <h2 class="additional-products__item">Сахарозаменитель</h2>
+    <h3 class="additional-products__item">Сахарозаменитель</h3>
     <p class="additional-products__weight">1 упаковка(100 г)</p>
     <p class="additional-products__cost">200 P.</p>
     <a class="additional-products__link" href="#">Заказать</a>
   </article>
 
   <article class="additional-products__article">
-    <h2 class="additional-products__item">Питьевая вода</h2>
+    <h3 class="additional-products__item">Питьевая вода</h3>
     <p class="additional-products__weight">5 литров</p>
     <p class="additional-products__cost">50 P.</p>
     <a class="additional-products__link" href="#">Заказать</a>
   </article>
 
   <article class="additional-products__article">
-    <h2 class="additional-products__item">Молоко</h2>
+    <h3 class="additional-products__item">Молоко</h3>
     <p class="additional-products__weight">1 литр</p>
     <p class="additional-products__cost">100 P.</p>
     <a class="additional-products__link" href="#">Заказать</a>
   </article>
 
   <article class="additional-products__article">
-    <h2 class="additional-products__item">Витамины</h2>
+    <h3 class="additional-products__item">Витамины</h3>
     <p class="additional-products__weight">1 упаковка(30 г.)</p>
     <p class="additional-products__cost">300 P.</p>
     <a class="additional-products__link" href="#">Заказать</a>
@@ -157,23 +160,22 @@
   <section class="gift">
     <h2 class="gift__header visually-hidden">Промо: закажите все товары и получите чехол для кота в подарок
     </h2>
-    <p class="girt__promo">Закажите все и получите чехол для кота в подарок!</p>
-    <img class="girt__background" src="../source/img/gift-photo.png" width="280" height="289" alt="Кот в чехле">
+    <img class="gift__img" src="img/gift.svg" width="78" height="80" alt="логотип подарка">
+    <p class="gift__promo">Закажите все и получите чехол для кота в подарок!</p>
   </section>
-
-
-
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <section class="page-footer__cooperation">
-        <h2 class="page-footer__invitation">приглашаем к сотрудничеству дилеров!</h2>
+        <div class="page-footer__diler">
+        <h2 class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="page-footer__address">
-           ул. Большая Конюшенная, д.19/8<br>
-           Санкт-Петербург
+          ул. Большая Конюшенная, д.19/8<br>
+          Санкт-Петербург
           </p>
-          <img class="page-footer__map" src="../source/img/map.png" width="320" height="362" alt="Как до нас добраться">
+        </div>
+          <img class="page-footer__map" src="../source/img/location.png" width="320" height="362" alt="Как до нас добраться">
           <div class="page-footer__social">
             <a class="page-footer__logo" href="index.html">
               <img src="../source/img/logo-letter.svg" width="101" height="18" alt="Надпись Кэт энерджи">
@@ -181,19 +183,27 @@
             <div class="social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com">Вконтакте</a>
+                <a class="social__link social__link--vkontakte" href="https://vk.com">
+                  <img class="social__img" src="../source/img/vk.svg" width="130" height="22" alt="мы вконтакте">
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com">в Инстаграме</a>
+                <a class="social__link social__link--instagram" href="https://www.instagram.com">
+                  <img class="social__img" src="../source/img/insta.svg" width="130" height="22" alt="мы в instagram">
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com">в Фейсбуке</a>
+                <a class="social__link social__link--facebook" href="https://www.facebook.com">
+                  <img class="social__img" src="../source/img/fb.svg" width="130" height="22" alt="мы в facebook">
+                </a>
               </li>
             </ul>
             </div>
           </div>
           <div class="page-footer__copyright">
-            <a class="page-footer__copyright page-footer__copyright--link" href="https://htmlacademy.ru">HTML Academy</a>
+            <a class="page-footer__copyright page-footer__copyright--link" href="https://htmlacademy.ru">
+              HTML Academy
+              <img class="page-footer__copyright page-footer__copyright--img" src="../source/img/academy.svg" width="27" height="34" alt="логотип htmlacademy"></a>
           </div>
       </section>
     </div>

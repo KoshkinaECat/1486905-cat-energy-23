@@ -3,7 +3,7 @@
 * Студент: [Екатерина Кошкина](https://up.htmlacademy.ru/adaptive/23/user/1486905).
 * Наставник: [АЛЕКСЕЙ ЕЛЬКИН](https://htmlacademy.ru/profile/alex_elkin).
 
----
+
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
