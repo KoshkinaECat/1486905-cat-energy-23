@@ -1,0 +1,42 @@
+.programs {
+  background-color: @grey;
+}
+
+.programs__title {
+  font-family: @first_font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.programs__description {
+  font-family: @second_font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special-grey;
+}
+
+.programs__link {
+  font-family: @first_font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @black;
+  position: relative;
+}
+
+.programs__link::before {
+  content: "";
+  background-image: url("./img/arrow.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

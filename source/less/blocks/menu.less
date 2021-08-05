@@ -1,0 +1,58 @@
+.page-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  min-height: 66px;
+}
+
+.page-header__logo {
+  text-decoration: none;
+  color: @black;
+}
+
+.page-header__logo-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-header__button {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.page-header__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: @black3;
+  box-shadow: 0 8px 0 0 @black3, 0 16px 0 0 @black3;
+}
+
+.main-nav__list {
+  font-family: @first_font;
+  font-weight: 500;
+  font-style: normal;
+  size: 20px;
+  line-height: 20px;
+  list-style: none;
+  color: @black;
+  text-transform: uppercase;
+}
+
+.main-nav__link {
+  color: @black;
+}
