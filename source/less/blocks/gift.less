@@ -1,5 +1,5 @@
 .gift {
-  background-image: url("./img/gift-photo.png");
+  background-image: url("/img/background-cat.png");
   background-repeat: no-repeat;
   width: 280px;
   height: 289px;
@@ -7,9 +7,17 @@
 
 .gift__promo {
   font-family: @second_font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: @white;
+  position: relative;
+}
+
+.gift__promo::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/gift.svg");
+  background-repeat: no-repeat;
+  width: 78px;
+  height: 80px;
 }

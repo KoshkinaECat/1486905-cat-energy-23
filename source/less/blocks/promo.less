@@ -1,15 +1,27 @@
 .promo {
   background-color: @green;
   font-family: @first_font;
-  font-style: normal;
-  font-weight: normal;
   color: @white;
   text-transform: uppercase;
 }
 
+.promo--tablet {
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    color: @black;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @green;
+    color: @white;
+  }
+}
+
+
 .promo__header {
   font-size: 36px;
   line-height: 36px;
+  text-transform: none;
 }
 
 .promo__slogan {

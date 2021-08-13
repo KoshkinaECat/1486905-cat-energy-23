@@ -4,12 +4,19 @@
 
 .page-footer__diler {
   background-color: @white;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-evenly;
+  }
 }
 
 .page-footer__invitation {
   font-family: @first_font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -18,8 +25,6 @@
 
 .page-footer__address {
   font-family: @second_font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: @special-grey;
@@ -35,8 +40,45 @@
 .page-footer__copyright--link {
   color: @special-grey;
   font-family: @second_font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  background-image: url("/img/academy.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.social {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+}
+
+.social__item--vk {
+  background-image: url("/img/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 130px;
+  height: 22px;
+}
+
+.social__item--instagram {
+  background-image: url("/img/insta.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 130px;
+  height: 22px;
+}
+
+.social__item--facebook {
+  background-image: url("/img/fb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 130px;
+  height: 22px;
 }

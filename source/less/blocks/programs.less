@@ -2,10 +2,14 @@
   background-color: @grey;
 }
 
+@media (min-width: @desktop-width) {
+  .programs__wrapper {
+    display: inline-flex;
+  }
+}
+
 .programs__title {
   font-family: @first_font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -14,8 +18,6 @@
 
 .programs__description {
   font-family: @second_font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: @special-grey;
@@ -23,8 +25,6 @@
 
 .programs__link {
   font-family: @first_font;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -34,9 +34,25 @@
 
 .programs__link::before {
   content: "";
-  background-image: url("./img/arrow.png");
+  background-image: url("/img/arrow.png");
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.programs__title--slim {
+  background-image: url("/img/slim.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+  background-position: left;
+}
+
+.programs__title--mass {
+  background-image: url("/img/mass.png");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+  background-position: left;
 }

@@ -12,6 +12,7 @@
 .page-header__logo {
   text-decoration: none;
   color: @black;
+  height: 66px;
 }
 
 .page-header__logo-text {
@@ -19,6 +20,28 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  height: 66px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    height: 76px;
+  }
+
+  .page-header__logo-text {
+    height: 76px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    height: 112px;
+  }
+
+  .page-header__logo-text {
+    height: 112px;
+  }
 }
 
 .page-header__button {
@@ -45,14 +68,41 @@
 .main-nav__list {
   font-family: @first_font;
   font-weight: 500;
-  font-style: normal;
   size: 20px;
   line-height: 20px;
   list-style: none;
   color: @black;
   text-transform: uppercase;
+  width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__link {
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 709px;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 478px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1220px;
+  }
 }
