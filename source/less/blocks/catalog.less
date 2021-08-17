@@ -6,6 +6,18 @@
   color: @black;
 }
 
+.catalog__div {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .catalog__info {
   font-family: @first_font;
   font-size: 16px;
@@ -51,4 +63,8 @@
   text-transform: uppercase;
   color: @special-grey;
   background-color: @grey4;
+}
+
+.additional-products__article {
+  border: 1px solid @grey3;
 }

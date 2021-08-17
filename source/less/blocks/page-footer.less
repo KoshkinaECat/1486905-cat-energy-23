@@ -30,6 +30,27 @@
   color: @special-grey;
 }
 
+.page-footer__map {
+  background-image: url("../img/location.png");
+  width: 320px;
+  height: 362px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/location-tablet.png");
+    width: 768px;
+    height: 400px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/locaion-desktop.png");
+    width: 1440px;
+    height: 400px;
+    background-repeat: no-repeat;
+  }
+}
+
 .social__list {
   list-style: none;
   padding: 0;
@@ -49,6 +70,18 @@
 
 .social {
   @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+}
+
+.page-footer__social {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
     display: inline-block;
   }
 }

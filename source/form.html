@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Кэт энерджи</title>
   <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -39,6 +39,7 @@
   <main class="page-form">
     <section class="selection">
       <h1 class="selection__header">Подбор программы</h1>
+      <div class="selection__div">
       <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form method="GET" action="https://echo.htmlacademy.ru">
         <p class="selection__form">Имя:*
@@ -46,6 +47,7 @@
         <p class="selection__form">Вес (кг):*
           <input class="selection__form" type="number" name="weight" placeholder="7" required></p>
         <p class="selection__form">Возраст (лет):<input type="number" name="age" placeholder="7"></p>
+
 
         <h2 class="selection__header visually-hidden">Выбрать похудение или набор массы</h2>
         <ul class="selection__list">
@@ -64,11 +66,14 @@
             <label for="advice">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
+        </form>
+      </div>
 
         <h2 class="selection__header selection__header--contacts">Контактные данные (владельца кота)</h2>
-        <p class="selection__form">E-mail:*
+        <form method="GET" action="https://echo.htmlacademy.ru">
+        <p class="selection__form selection__form--contact">E-mail:*
           <input class="selection__input" type="email" name="email" placeholder="Kuklachev@gmail.com" required></p>
-        <p class="selection__form">Телефон:*
+        <p class="selection__form selection__form--contact">Телефон:*
           <input class="selection__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required></p>
 
         <h2 class="section__header selection__header--contacts">Комментарий</h2>
@@ -77,7 +82,7 @@
 
 
           <h2 class="selection__header selection__header--contacts">Дополнительно</h2>
-          <ul class="selection__list">
+          <ul class="selection__products">
             <li class="selection__item">
               <input class="selection__input" type="checkbox" name="sweetener" id="sweetener" checked>
               <label for="sweetener">Сахарозаменитель</label>
@@ -115,7 +120,7 @@
           Санкт-Петербург
           </p>
         </div>
-          <img class="page-footer__map" src="./img/location.png" width="320" height="362" alt="Как до нас добраться">
+        <div class="page-footer__map"></div>
           <div class="page-footer__social">
             <a class="page-footer__logo" href="index.html">
               <img src="./img/logo-letter.svg" width="101" height="18" alt="Надпись Кэт энерджи">

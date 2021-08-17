@@ -17,9 +17,17 @@
   color: @special-grey;
 }
 
+@media (min-width: @desktop-width) {
+  .selection__form--contact {
+    display: inline;
+  }
+}
+
+
 .selection__list {
   list-style: none;
   padding: 0;
+  border: 1px solid @color1;
 }
 
 .selection__item {
@@ -28,6 +36,22 @@
   text-transform: uppercase;
   color: @black3;
 }
+
+.selection__products {
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 
 .selection__header--contacts {
   font-size: 24px;

@@ -1,8 +1,23 @@
 .gift {
-  background-image: url("../img/background-cat.png");
-  background-repeat: no-repeat;
+
+  background-image: url("../img/gift-photo-mobile.png");
   width: 280px;
   height: 289px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/gift-photo-tablet.png");
+    width: 708px;
+    height: 200px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/gift-photo-desktop.png");
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 289px;
+  }
 }
 
 .gift__promo {
