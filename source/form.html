@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Кэт энерджи</title>
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__back">
     <div class="page-header__div">
     <a class="page-header__logo" href="#">
     </a>
@@ -16,17 +15,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="index.html">
+            <a class="main-nav__link main-nav__link--form" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link main-nav__link--form" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link main-nav__link--form" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -40,31 +39,35 @@
   </header>
   <main class="page-form">
     <section class="selection">
+      <div class="selection__wrapper">
       <h1 class="selection__header">Подбор программы</h1>
       <div class="selection__div">
+        <div class="selection__border">
       <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form method="GET" action="https://echo.htmlacademy.ru">
         <p class="selection__form">Имя:*
-          <input class="selection__form" type="text" name="name" placeholder="Барсик" required></p>
+          <input class="selection__form selection__form--border" type="text" name="name" placeholder="Барсик" required></p>
         <p class="selection__form">Вес (кг):*
-          <input class="selection__form" type="number" name="weight" placeholder="7" required></p>
-        <p class="selection__form">Возраст (лет):<input type="number" name="age" placeholder="7"></p>
+          <input class="selection__form selection__form--border" type="number" name="weight" placeholder="7" required></p>
+        <p class="selection__form">Возраст (лет):
+          <input class="selection__form selection__form--border" type="number" name="age" placeholder="7"></p>
+        </div>
 
 
         <h2 class="selection__header visually-hidden">Выбрать похудение или набор массы</h2>
         <ul class="selection__list">
           <li class="selection__item">
-            <input class="selection__input" type="radio" value="slim" name="choice" id="slim" checked>
+            <input class="visually-hidden selection__input" type="radio" value="slim" name="choice" id="slim" checked>
             <label for="slim">Похудение</label>
           </li>
 
           <li class="selection__item">
-            <input class="selection__input" type="radio" value="mass" name="choice" id="mass">
+            <input class="visually-hidden selection__input" type="radio" value="mass" name="choice" id="mass">
             <label for="mass">Набор массы</label>
           </li>
 
           <li class="selection__item">
-            <input class="selection__input" type="radio" value="advice" name="choice" id="advice">
+            <input class="visually-hidden selection__input" type="radio" value="advice" name="choice" id="advice">
             <label for="advice">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
@@ -74,7 +77,7 @@
         <h2 class="selection__header selection__header--contacts">Контактные данные (владельца кота)</h2>
         <form method="GET" action="https://echo.htmlacademy.ru">
         <p class="selection__form selection__form--contact">E-mail:*
-          <input class="selection__input" type="email" name="email" placeholder="Kuklachev@gmail.com" required></p>
+          <input class="selection__input selection__input--mail" type="email" name="email" placeholder="Kuklachev@gmail.com" required></p>
         <p class="selection__form selection__form--contact">Телефон:*
           <input class="selection__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required></p>
 
@@ -108,8 +111,8 @@
 
           <button class="selection__button" type="submit">Отправить заявку</button>
           <p class="selection__required">*-Обязательные поля</p>
-
       </form>
+    </div>
     </section>
 
   </main>

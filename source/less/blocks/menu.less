@@ -7,9 +7,21 @@
   padding: 0 20px;
   min-height: 66px;
   position: relative;
+  border-bottom: 1px solid @grey;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: none;
+  }
 }
 
+
 .page-header__back {
+  background-image: none;
+
   @media (min-width: @desktop-width) {
     width: 1440px;
     background-image: url("/img/backgroundcat.png");
@@ -173,6 +185,10 @@
   @media (min-width: @desktop-width) {
     color: @white;
   }
+}
+
+.main-nav__link--form {
+  color: @black;
 }
 
 .main-nav__wrapper {
