@@ -1,0 +1,52 @@
+.gift {
+
+  background-image: url("../img/gift-photo-mobile.png");
+  width: 100%;
+  height: 289px;
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+  background-color: @color5;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/gift-photo-tablet.png");
+    background-color: @color5;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/gift-photo-desktop.png");
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 289px;
+    margin-top: 185px;
+  }
+}
+
+.gift__promo {
+  font-family: @second_font;
+  font-size: 16px;
+  line-height: 20px;
+  color: @white;
+  position: relative;
+  padding-top: 186px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 71px;
+    padding-left: 423px;
+    text-align: left;
+  }
+}
+
+.gift__promo::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/gift.svg");
+  background-repeat: no-repeat;
+  width: 78px;
+  height: 80px;
+  top: 58px;
+  left: 101px;
+}

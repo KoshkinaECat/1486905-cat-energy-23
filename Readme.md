@@ -1,11 +1,8 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Екатерина Кошкина](https://up.htmlacademy.ru/adaptive/23/user/1486905).
+* Студент: [Екатерина Кошкина](https://up.htmlacademy.ru/adaptive/23/user/1486905)
 
 * Наставник: [АЛЕКСЕЙ ЕЛЬКИН](https://htmlacademy.ru/profile/alex_elkin).
-
-
-
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
@@ -52,7 +49,7 @@ git clone SSH-адрес_вашего_форка
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
+<a href="https://htmlacademy.ru/intensive/adaptive"><img width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
