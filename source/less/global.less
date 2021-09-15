@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Oswald";
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
   src:
@@ -28,6 +28,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  position: absolute;
 }
 
 a {
@@ -42,4 +43,23 @@ a {
 
 .page__body {
   margin: 0;
+}
+
+.page-main {
+  margin-top: -36px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }

@@ -1,7 +1,7 @@
 const input = document.querySelector('.comparison__input')
 const buttons = document.querySelectorAll('.comparison__btn')
 
-console.log(buttons)
+// console.log(buttons)
 
 const comparison = document.querySelector('.comparison')
 
@@ -25,3 +25,16 @@ for(btn of buttons){
 
   })
 }
+
+// main menu
+const nav = document.querySelector('.main-nav');
+const button = document.querySelector('.page-header__button');
+
+nav.classList.remove('main-nav--nojs');
+button.classList.remove('page-header__button--nojs');
+
+button.addEventListener('click', () => {
+  console.log('click!!')
+  button.classList.toggle('page-header__button--opened');
+  nav.classList.toggle('main-nav--opened');
+})

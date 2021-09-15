@@ -1,5 +1,4 @@
 .selection__wrapper {
-  margin-left: 20px;
   margin-top: 27px;
 
   @media (min-width: @tablet-width) {
@@ -75,6 +74,7 @@
   text-transform: uppercase;
   color: @special-grey;
   font-family: @first_font;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -87,26 +87,39 @@
   }
 }
 
-
-.selection__form--contact {
+.selection__form--mail {
   position: relative;
-
 
   @media (min-width: @desktop-width) {
     display: inline;
   }
 }
 
-.selection__input--mail {
-  border: 1px solid @grey3;
-  width: 219px;
-}
-
 
 .selection__form--border {
   border: 1px solid @color1;
+  padding: 12px 20px
 }
 
+.selection__checkbox+label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @grey3;
+  left: 0;
+}
+
+.selection__checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-image: url("/img/vector.svg");
+  background-repeat: no-repeat;
+  left: 6px;
+  top: 5px;
+}
 
 .selection__list {
   list-style: none;
@@ -138,8 +151,9 @@
   color: @black3;
   margin-bottom: 17px;
   padding-left: 35px;
+  font-family: @first_font;
+  position: relative;
 }
-
 
 .selection__products {
   list-style: none;
@@ -161,6 +175,7 @@
   font-size: 24px;
   line-height: 26px;
   color: @black;
+  font-family: @first_font;
 }
 
 .selection__input {
@@ -168,8 +183,40 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-grey;
-  position: relative;
+  padding: 12px 20px;
 }
+
+.selection__input--mail {
+  border: 1px solid @grey3;
+  background-image: url("/img/icon_email.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+
+  @media(min-width: @tablet-width) {
+    background-position: right 20px center;
+  }
+}
+
+.selection__input--contact {
+  border: 1px solid @grey3;
+  background-image: url("/img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+
+  @media(min-width: @tablet-width) {
+    background-position: right 20px center;
+  }
+}
+
+.selection__input--textarea {
+  height: 150px;
+  width: 100%;
+  font-family: @first_font;
+  border: 1px solid @color1;
+}
+
 
 .selection__input:checked+label::after {
   content: "";
@@ -178,14 +225,16 @@
   height: 31px;
   background-image: url("/img/radiobutton_active.png");
   background-repeat: no-repeat;
-  left: 20px;
+  left: 0;
 
   @media (min-width: @tablet-width) {
-    left: 100px;
+    left: 0;
+    position: absolute;
   }
 
   @media (min-width: @desktop-width) {
-    left: 753px;
+    left: 0;
+    position: absolute;
   }
 }
 
@@ -196,25 +245,27 @@
   height: 31px;
   background-image: url("/img/radiobutton.png");
   background-repeat: no-repeat;
-  left: 20px;
+  left: 0;
 
   @media (min-width: @tablet-width) {
-    left: 100px;
+    left: 0;
+    position: absolute;
   }
 
   @media (min-width: @desktop-width) {
-    left: 753px;
+    left: 0;
+    position: absolute;
   }
 }
 
-.selection__form--contact::before {
+.selection__form--mail::before {
   content: "";
-  background-image: url("/img/icon_email.png");
-  background-repeat: no-repeat;
+
   width: 20px;
   height: 14px;
   position: absolute;
-  left: 220px;
+  left: 210px;
+  top: 48%;
 }
 
 .selection__button {
@@ -223,6 +274,8 @@
   text-transform: uppercase;
   color: @white;
   background-color: @green-for-button;
+  font-family: @first_font;
+  padding: 7px 44px;
 }
 
 .selection__required {

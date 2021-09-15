@@ -11,7 +11,7 @@
     <div class="page-header__div">
     <a class="page-header__logo" href="#">
     </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs main-nav--closed">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -38,7 +38,7 @@
   </div>
   </header>
   <main class="page-form">
-    <section class="selection">
+    <section class="selection container">
       <div class="selection__wrapper">
       <h1 class="selection__header">Подбор программы</h1>
       <div class="selection__div">
@@ -76,36 +76,36 @@
 
         <h2 class="selection__header selection__header--contacts">Контактные данные (владельца кота)</h2>
         <form method="GET" action="https://echo.htmlacademy.ru">
-        <p class="selection__form selection__form--contact">E-mail:*
+        <p class="selection__form selection__form--mail">E-mail:*
           <input class="selection__input selection__input--mail" type="email" name="email" placeholder="Kuklachev@gmail.com" required></p>
         <p class="selection__form selection__form--contact">Телефон:*
-          <input class="selection__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required></p>
+          <input class="selection__input selection__input--contact" type="tel" name="tel" placeholder="8 (960) 900-60-90" required></p>
 
         <h2 class="section__header selection__header--contacts">Комментарий</h2>
         <p class="selection__form">
-          <textarea class="selection__input" name="message" placeholder="Расскажите обо всех повадках кота"></textarea></p>
+          <textarea class="selection__input selection__input--textarea" name="message" placeholder="Расскажите обо всех повадках кота"></textarea></p>
 
 
           <h2 class="selection__header selection__header--contacts">Дополнительно</h2>
           <ul class="selection__products">
             <li class="selection__item">
-              <input class="selection__input" type="checkbox" name="sweetener" id="sweetener" checked>
+              <input class="selection__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label for="sweetener">Сахарозаменитель</label>
             </li>
 
             <li class="selection__item">
-              <input class="selection__input" type="checkbox" name="water" id="water">
-              <label for="water">Питьевая вода</label>
+              <input class="selection__checkbox visually-hidden" type="checkbox" name="water" id="water">
+              <label class="selection__label" for="water">Питьевая вода</label>
             </li>
 
             <li class="selection__item">
-              <input class="selection__input" type="checkbox" name="milk" id="milk">
-              <label for="milk">Молоко</label>
+              <input class="selection__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+              <label class="selection__label" for="milk">Молоко</label>
             </li>
 
             <li class="selection__item">
-              <input class="selection__input" type="checkbox" name="vitamins" id="vitamins">
-              <label for="vitamins">Витамины</label>
+              <input class="selection__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+              <label class="selection__label" for="vitamins">Витамины</label>
             </li>
           </ul>
 
@@ -126,7 +126,8 @@
         Санкт-Петербург
         </p>
       </div>
-      <div class="page-footer__map"></div>
+      <!-- <div class="page-footer__map"></div> -->
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002903!2d30.320858715826557!3d59.9387191690545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631644666122!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <div class="page-footer__wrapper">
         <div class="page-footer__social">
           <a class="page-footer__logo" href="index.html">

@@ -7,7 +7,6 @@
 
 .promo__wrapper {
   @media (min-width: @mobile-width-only) {
-    width: 320px;
     height: 484px;
     background-image: url("/img/greencat.png");
     background-repeat: no-repeat;
@@ -24,18 +23,16 @@
 }
 
 .promo--tablet {
-  width: 320px;
   height: 484px;
-  background-image: url("/img/greencat.png");
+  background-image: url("/img/greencat.png"), linear-gradient(to bottom, @color5 302px, rgba(0, 0, 0, 0) 302px);
   background-repeat: no-repeat;
   position: relative;
-
+  background-position: center top;
 
   @media (min-width: @tablet-width) {
     color: @black;
     background-image: url("/img/can-tablet.png");
     background-repeat: no-repeat;
-    width: 709px;
     height: 609px;
   }
 
@@ -54,18 +51,20 @@
   text-transform: none;
   text-align: center;
   padding-top: 27px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     text-align: left;
-    margin-left: 120px;
     width: 414px;
     height: 120px;
     color: @black;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
   }
 
   @media (min-width: @desktop-width) {
     text-align: left;
-    margin-left: 190px;
     width: 414px;
     height: 120px;
     color: @black;
@@ -83,20 +82,22 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
-    margin-left: 120px;
     width: 283px;
     height: 20px;
     color: @black;
+    font-size: 20px;
+    line-height: 20px;
+    top: 152px;
+    position: absolute;
   }
 
   @media (min-width: @desktop-width) {
     text-align: left;
-    margin-left: 190px;
     width: 283px;
     height: 20px;
     color: @black;
     position: absolute;
-    top: 205px;
+    top: 260px;
   }
 }
 
@@ -115,19 +116,25 @@
   background-color: @green-for-button;
   position: absolute;
   left: 20px;
-  padding: 12px 65px;
-  bottom: -22px;
+  padding: 12px 73px;
+  bottom: -33px;
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     display: block;
-    margin-left: 100px;
     bottom: 178px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+    width: 244px;
+    height: 54px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-left: 170px;
-    top: 250px;
+    top: 315px;
+    margin-left: 90px;
+    width: 244px;
+    height: 54px;
   }
 }

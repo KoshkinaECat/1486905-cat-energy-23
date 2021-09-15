@@ -8,25 +8,24 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__back">
     <div class="page-header__div">
     <a class="page-header__logo" href="#">
     </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs main-nav--closed">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="index.html">
+            <a class="main-nav__link main-nav__link--form" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link main-nav__link--form" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link main-nav__link--form" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -38,98 +37,119 @@
 
   </div>
   </header>
-
   <main class="page-catalog">
     <h1 class="catalog__header visually-hidden">Каталог продукции</h1>
-    <section class="catalog">
+    <section class="catalog container">
     <h2 class="catalog__header">Каталог продукции</h2>
     <div class="catalog__div">
     <article class="catalog__product">
-      <div class="catalog__details">
+      <div class="catalog__details container">
+        <div class="catalog__image catalog__image--chiken500" alt="Вкус курица 500 грамм"></div>
         <h3 class="catalog__info">Cat Energy PRO 500 г</h3>
-        <img class="catalog__image catalog__image--chiken500" src="./img/chiken500.png" width="68" height="86" alt="Вкус курица 500 грамм">
-        <p class="catalog__description catalog__description--weight">Масса 500 г</p>
-        <p class="catalog__description catalog__description--taste">Вкус Курица</p>
-        <p class="catalog__description catalog__description--cost">Цена 700 Р.</p>
+        <p class="catalog__description catalog__description--weight1">Масса</p>
+        <p class="catalog__description catalog__description--weight2">500 г</p>
+        <p class="catalog__description catalog__description--taste1">Вкус</p>
+        <p class="catalog__description catalog__description--taste2">Курица</p>
+        <p class="catalog__description catalog__description--cost1">Цена</p>
+        <p class="catalog__description catalog__description--cost2">700 Р.</p>
         <a class="catalog__link" href="#">Заказать</a>
       </div>
+
     </article>
 
     <article class="catalog__product">
-      <div class="catalog__details">
+      <div class="catalog__details container">
         <h3 class="catalog__info">Cat Energy PRO 1000 г</h3>
-        <img class="catalog__image catalog__image--chiken1000" src="./img/chiken1000.png" width="84" height="100" alt="Вкус курица 1000 грамм">
-        <p class="catalog__description catalog__description--weight">Масса 1000 г</p>
-        <p class="catalog__description catalog__description--taste">Вкус Курица</p>
-        <p class="catalog__description catalog__description--cost">Цена 1000 Р.</p>
+        <div class="catalog__image catalog__image--chiken1000"></div>
+        <p class="catalog__description catalog__description--weight1">Масса</p>
+        <p class="catalog__description catalog__description--weight2">1000 г</p>
+        <p class="catalog__description catalog__description--taste1">Вкус</p>
+        <p class="catalog__description catalog__description--taste2">Курица</p>
+        <p class="catalog__description catalog__description--cost1">Цена</p>
+        <p class="catalog__description catalog__description--cost2">1000 Р.</p>
         <a class="catalog__link" href="#">Заказать</a>
       </div>
     </article>
 
     <article class="catalog__product">
-      <div class="catalog__details">
+      <div class="catalog__details container">
         <h3 class="catalog__info">Cat Energy PRO 500 г</h3>
-        <img class="catalog__image catalog__image--fish500" src="./img/fish500.png" width="68" height="78" alt="Вкус рыба 500 грамм">
-        <p class="catalog__description catalog__description--weight">Масса 500 г</p>
-        <p class="catalog__description catalog__description--taste">Вкус Рыба</p>
-        <p class="catalog__description catalog__description--cost">Цена 700 Р.</p>
+        <div class="catalog__image catalog__image--fish500"></div>
+        <p class="catalog__description catalog__description--weight1">Масса</p>
+        <p class="catalog__description catalog__description--weight2">500 г</p>
+        <p class="catalog__description catalog__description--taste1">Вкус</p>
+        <p class="catalog__description catalog__description--taste2">Рыба</p>
+        <p class="catalog__description catalog__description--cost1">Цена</p>
+        <p class="catalog__description catalog__description--cost2">700 Р.</p>
         <a class="catalog__link" href="#">Заказать</a>
       </div>
     </article>
 
     <article class="catalog__product">
-      <div class="catalog__details">
+      <div class="catalog__details container">
         <h3 class="catalog__info">Cat Energy PRO 1000 г</h3>
-        <img class="catalog__image catalog__image--fish1000" src="./img/fish1000.png" width="84" height="100" alt="Вкус рыба 1000 грамм">
-        <p class="catalog__description catalog__description--weight">Масса 1000 г</p>
-        <p class="catalog__description catalog__description--taste">Вкус Рыба</p>
-        <p class="catalog__description catalog__description--cost">Цена 1000 Р.</p>
+        <div class="catalog__image catalog__image--fish1000"></div>
+        <p class="catalog__description catalog__description--weight1">Масса</p>
+        <p class="catalog__description catalog__description--weight2">1000 г</p>
+        <p class="catalog__description catalog__description--taste1">Вкус</p>
+        <p class="catalog__description catalog__description--taste2">Рыба</p>
+        <p class="catalog__description catalog__description--cost1">Цена</p>
+        <p class="catalog__description catalog__description--cost2">1000 Р.</p>
         <a class="catalog__link" href="#">Заказать</a>
       </div>
     </article>
 
     <article class="catalog__product">
-      <div class="catalog__details">
+      <div class="catalog__details container">
         <h3 class="catalog__info">Cat Energy SLIM 500 г</h3>
-        <img class="catalog__image catalog__image--buckwheat500" src="./img/buckwheat500.png" width="68" height="78" alt="Вкус гречка 500 грамм">
-        <p class="catalog__description catalog__description--weight">Масса 500 г</p>
-        <p class="catalog__description catalog__description--taste">Вкус Гречка</p>
-        <p class="catalog__description catalog__description--cost">Цена 400 Р.</p>
+        <div class="catalog__image catalog__image--buckwheat500"></div>
+        <p class="catalog__description catalog__description--weight1">Масса</p>
+        <p class="catalog__description catalog__description--weight2">500 г</p>
+        <p class="catalog__description catalog__description--taste1">Вкус</p>
+        <p class="catalog__description catalog__description--taste2">Гречка</p>
+        <p class="catalog__description catalog__description--cost1">Цена</p>
+        <p class="catalog__description catalog__description--cost2">400 Р.</p>
         <a class="catalog__link" href="#">Заказать</a>
       </div>
     </article>
 
     <article class="catalog__product">
-      <div class="catalog__details">
+      <div class="catalog__details container">
         <h3 class="catalog__info">Cat Energy SLIM 1000 г</h3>
-        <img class="catalog__image catalog__image--buckwheat1000" src="./img/buckwheat1000.png" width="84" height="100" alt="Вкус гречка 1000 грамм">
-        <p class="catalog__description catalog__description--weight">Масса 1000 г</p>
-        <p class="catalog__description catalog__description--taste">Вкус Гречка</p>
-        <p class="catalog__description catalog__description--cost">Цена 700 Р.</p>
+        <div class="catalog__image catalog__image--buckwheat1000"></div>
+        <p class="catalog__description catalog__description--weight1">Масса</p>
+        <p class="catalog__description catalog__description--weight2">1000 г</p>
+        <p class="catalog__description catalog__description--taste1">Вкус</p>
+        <p class="catalog__description catalog__description--taste2">Гречка</p>
+        <p class="catalog__description catalog__description--cost1">Цена</p>
+        <p class="catalog__description catalog__description--cost2">700 Р.</p>
         <a class="catalog__link" href="#">Заказать</a>
       </div>
     </article>
 
-    <article class="catalog__product">
+    <article class="catalog__product container">
       <div class="catalog__details">
         <h3 class="catalog__info">Cat Energy SLIM 500 г</h3>
-        <img class="catalog__image catalog__image--rice500" src="./img/rice500.png" width="72" height="84" alt="Вкус рис 500 грамм">
-        <p class="catalog__description catalog__description--weight">Масса 500 г</p>
-        <p class="catalog__description catalog__description--taste">Вкус Рис</p>
-        <p class="catalog__description catalog__description--cost">Цена 500 Р.</p>
+        <div class="catalog__image catalog__image--rice500"></div>
+        <p class="catalog__description catalog__description--weight1">Масса</p>
+        <p class="catalog__description catalog__description--weight2">500 г</p>
+        <p class="catalog__description catalog__description--taste1">Вкус</p>
+        <p class="catalog__description catalog__description--taste2">Рис</p>
+        <p class="catalog__description catalog__description--cost1">Цена</p>
+        <p class="catalog__description catalog__description--cost2">500 Р.</p>
         <a class="catalog__link" href="#">Заказать</a>
       </div>
     </article>
 
-    <article class="catalog-all-products">
-      <p class="catalog-all-products__plus">+</p>
+    <article class="catalog-all-products container">
+      <div class="catalog-all-products__plus"></div>
       <h3 class="catalog-all-products__header">Показать еще 100500 товаров</h3>
       <p class="catalog-all-products__promo">На самом деле вкусов гораздо больше!</p>
       <a class="catalog-all-products__link" href="#">Показать все</a>
     </article>
   </div>
   </section>
-<div class="productsAndGift">
+<div class="productsAndGift container">
   <section class="additional-products">
 
     <h2 class="additional-products__header">Дополнительные товары</h2>
@@ -166,13 +186,16 @@
     <h2 class="gift__header visually-hidden">Промо: закажите все товары и получите чехол для кота в подарок
     </h2>
     <!-- <img class="gift__img" src="./img/gift.svg" width="78" height="80" alt="логотип подарка"> -->
-    <p class="gift__promo">Закажите все и получите чехол для кота в подарок!</p>
+    <p class="gift__promo">
+      Закажите все<br>
+      и получите чехол для<br>
+      кота в подарок!</p>
   </section>
 </div>
   </main>
   <footer class="page-footer">
     <section class="page-footer__cooperation">
-      <div class="page-footer__diler">
+      <div class="page-footer__diler page-footer__diler--catalog">
       <h2 class="page-footer__invitation">Приглашаем к сотрудничеству<br>
         дилеров!</h2>
       <p class="page-footer__address">
@@ -180,7 +203,8 @@
         Санкт-Петербург
         </p>
       </div>
-      <div class="page-footer__map"></div>
+      <!-- <div class="page-footer__map"></div> -->
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002903!2d30.320858715826557!3d59.9387191690545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631644666122!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <div class="page-footer__wrapper">
         <div class="page-footer__social">
           <a class="page-footer__logo" href="index.html">

@@ -1,5 +1,7 @@
 .example {
   background-color: @grey2;
+  overflow-x: hidden;
+  margin-top: 60px;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
@@ -139,8 +141,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    display: inline-block;
-    position: absolute;
     right: 0;
   }
 
@@ -158,7 +158,6 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
     right: 0;
     top: 927%;
   }
