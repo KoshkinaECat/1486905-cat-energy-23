@@ -98,10 +98,10 @@
 
 .selection__form--border {
   border: 1px solid @color1;
-  padding: 12px 20px
+  padding: 12px 20px;
 }
 
-.selection__checkbox+label::before {
+.selection__checkbox + label::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -110,7 +110,7 @@
   left: 0;
 }
 
-.selection__checkbox:checked+label::after {
+.selection__checkbox:checked + label::after {
   content: "";
   position: absolute;
   width: 26px;
@@ -193,7 +193,7 @@
   background-position: right center;
   width: 100%;
 
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     background-position: right 20px center;
   }
 }
@@ -205,7 +205,7 @@
   background-position: right center;
   width: 100%;
 
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     background-position: right 20px center;
   }
 }

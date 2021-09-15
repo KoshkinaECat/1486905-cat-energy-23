@@ -1,5 +1,6 @@
 .programs {
   background-color: @white;
+  padding-top: 17px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
@@ -36,51 +37,58 @@
   }
 }
 
-.programs__img--slim {
-  background-image: url("../img/slim.png");
+.programs__img {
   background-repeat: no-repeat;
-  height: 53px;
-  background-position: left;
-
+  background-position-x: left;
+  background-position-y: top;
   @media (min-width: @tablet-width) {
-    background-image: url("/img/cat_back.png");
-    background-repeat: no-repeat;
-    height: 211px;
-    background-position: right;
+    background-position-x: right;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("/img/cat_back_desktop.png");
-    background-repeat: no-repeat;
-    height: 106px;
     background-position-x: left;
-    background-position-y: top;
+  }
+}
+
+.programs__img--slim {
+  background-image: url("../img/slim.png");
+  // height: 53px;
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/cat_back.png");
+    // height: 211px;
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/cat_back_desktop.png");
+    // height: 106px;
   }
 }
 
 .programs__img--mass {
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   background-image: url("/img/mass.png");
-  height: 50px;
-  background-position: left;
+  // height: 50px;
+  // background-position: left;
 
   @media (min-width: @tablet-width) {
     background-image: url("/img/cat_mass.png");
-    background-repeat: no-repeat;
-    height: 200px;
-    background-position: right;
+    // background-repeat: no-repeat;
+    // height: 200px;
+    // background-position: right;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("/img/cat_mass_desktop.png");
-    background-repeat: no-repeat;
-    height: 100px;
-    background-position-x: left;
-    background-position-y: top;
+    // background-repeat: no-repeat;
+    // height: 100px;
+    // background-position-x: left;
+    // background-position-y: top;
   }
 }
 
 .programs__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 10px;
   font-family: @first_font;
   font-size: 24px;
   line-height: 37px;
@@ -116,12 +124,11 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @black;
-  position: relative;
   background-image: url("/img/arrow.png");
   background-repeat: no-repeat;
   display: block;
   background-position: center;
-  top: 127px;
+
 
   @media (min-width: @tablet-width) {
     background-position: 100px 0;

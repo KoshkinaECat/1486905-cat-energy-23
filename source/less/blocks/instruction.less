@@ -12,6 +12,8 @@
 }
 
 .instruction__header {
+  margin-top: 27px;
+  font-weight: normal;
   font-family: @first_font;
   font-size: 36px;
   line-height: 40px;
@@ -31,10 +33,6 @@
 
 .instruction__wrapper {
   height: 300px;
-
-  @media (min-width: @tablet-width) {}
-
-  @media (min-width: @desktop-width) {}
 }
 
 .instruction__list {
@@ -66,14 +64,15 @@
   color: @special-grey;
   position: relative;
   margin-bottom: 20px;
-  width: 256px;
+  // width: 256px;
   height: 60px;
+  padding-left: 80px;
 }
 
 .instruction__item--leaf {
   background-image: url("/img/leaf.png");
   background-repeat: no-repeat;
-  text-align: right;
+
 
   @media (min-width: @tablet-width) {
     background-image: url("/img/one.png");
@@ -89,7 +88,6 @@
 .instruction__item--tub {
   background-image: url("/img/tub.png");
   background-repeat: no-repeat;
-  text-align: right;
 
   @media (min-width: @tablet-width) {
     background-image: url("/img/two.png");
@@ -105,7 +103,6 @@
 
   background-image: url("/img/eat.png");
   background-repeat: no-repeat;
-  text-align: right;
 
   @media (min-width: @tablet-width) {
     background-image: url("/img/three.png");
@@ -121,7 +118,6 @@
 
   background-image: url("/img/clock.png");
   background-repeat: no-repeat;
-  text-align: right;
 
   @media (min-width: @tablet-width) {
     background-image: url("/img/four.png");

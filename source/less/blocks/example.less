@@ -1,7 +1,8 @@
 .example {
   background-color: @grey2;
   overflow-x: hidden;
-  margin-top: 60px;
+  padding-top: 44px;
+  padding-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
@@ -23,6 +24,8 @@
 }
 
 .example__header {
+  margin-top: 25px;
+  font-weight: normal;
   font-family: @first_font;
   font-size: 36px;
   line-height: 40px;
@@ -67,7 +70,7 @@
   color: @special-grey;
   text-transform: uppercase;
   width: 124px;
-  height: 64px;
+  height: 55px;
   display: inline-block;
   margin-right: 24px;
 
@@ -97,6 +100,7 @@
   width: 57px;
   margin-right: 33px;
   margin-left: 33px;
+  font-family: Arial sans-serif;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
@@ -126,7 +130,12 @@
   display: block;
   text-align: center;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.example__spend {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .example__cost {
@@ -136,16 +145,17 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: @mobile-width-only) {
-    display: block;
-  }
+  // @media (min-width: @mobile-width-only) {
+
+  // }
 
   @media (min-width: @tablet-width) {
     right: 0;
+    display: block;
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
+    display: inline;
     right: 1210px;
   }
 }
@@ -160,11 +170,13 @@
   @media (min-width: @tablet-width) {
     right: 0;
     top: 927%;
+        display: block;
   }
 
   @media (min-width: @desktop-width) {
     right: 1139px;
     top: 1954px;
+        display: inline;
   }
 }
 
@@ -173,6 +185,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__cats-wrapper {
+  padding-top: 38px;
 }
 
 .comparison {
@@ -195,14 +211,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.comparison__btn {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  border: none;
-  background-color: @grey2;
-}
-
 .comparison__skinny,
 .comparison__fat {
   width: 310px;
@@ -211,13 +219,17 @@
   height: auto;
 }
 
+.comparison__fat {
+  background-color: @grey2;
+}
+
 .comparison__controls {
   position: relative;
   width: 310px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 20px 48px;
 }
 
 .comparison__controls::before,
@@ -247,6 +259,15 @@
   left: calc(50% - 35px);
   top: calc(50% - 3px);
   transform: translateX(var(--psevdo-left));
+}
+
+.comparison__btn {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: @first_font;
+  text-transform: uppercase;
+  border: none;
+  background-color: @grey2;
 }
 
 .comparison__btn::before {
