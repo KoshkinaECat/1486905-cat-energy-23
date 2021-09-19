@@ -1,6 +1,7 @@
 .main-nav {
   flex-basis: 100%;
   order: 2;
+  display: none;
 
   @media (min-width: @tablet-width) {
     text-align: right;
@@ -12,18 +13,20 @@
     border-bottom: none;
     flex-basis: auto;
     order: 0;
-    margin-top: 16px;
+    margin-top: 18px;
+    display: block;
+    margin-left: 61px;
   }
 
   @media (min-width: @desktop-width) {
     text-align: right;
     left: 0;
-    right: 0;
-    top: 67px;
     width: auto;
     min-height: 38px;
     position: absolute;
     margin-top: 0;
+    right: -8px;
+    top: 71px;
   }
 }
 
@@ -50,10 +53,18 @@
     display: flex;
     align-content: flex-end;
     height: 34px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
     padding-right: 110px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

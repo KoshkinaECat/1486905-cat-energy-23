@@ -1,19 +1,29 @@
+.page-footer__cooperation{
+  @media (min-width: @desktop-width){
+    margin-top: -605px;
+  }
+}
 .page-footer__wrapper {
   background-color: @grey4;
+
+  @media (min-width: @tablet-width){
+    height: 150px;
+    padding: 0;
+  }
 }
 
 .page-footer__logo {
+  padding-top: 29px;
   opacity: 1;
   display: block;
-  padding-left: 96px;
-  padding-top: 39px;
-  padding-bottom: 32px;
+  padding-left: 76px;
+  padding-bottom: 28px;
   border-bottom: 1px solid @grey;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
-    padding-top: 60px;
-    padding-left: 30px;
+    padding-top: 68px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -36,20 +46,19 @@
 .page-footer__diler {
   background-color: @white;
   display: flex;
-  padding: 14px 20px;
+  padding: 24px 20px;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     width: 100%;
-    height: 201px;
     padding-left: 71px;
-    padding-top: 66px;
-    background-color: @grey4;
+    padding-top: 52px;
+    background-color: @white;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 95px;
-    margin-left: 110px;
+    margin-top: 93px;
+    margin-left: 115px;
     width: 570px;
     height: 201px;
     position: absolute;
@@ -78,6 +87,7 @@
 }
 
 .page-footer__address {
+  padding-left: 18px;
   font-family: @second_font;
   font-size: 14px;
   line-height: 20px;
@@ -86,7 +96,20 @@
   @media (min-width: @tablet-width) {
     width: 159px;
     height: 80px;
-    margin-right: 72px;
+    margin-right: 53px;
+    width: 159px;
+    height: 80px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    margin-top: 11px;
+  }
+
+  @media (min-width: @desktop-width){
+    margin-right: 88px;
+    text-align: start;
   }
 }
 
@@ -111,35 +134,30 @@
     background-repeat: no-repeat;
   }
 }
-
-.social__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  align-content: center;
-
-  @media (min-width: @desktop-width) {
-    padding-left: 413px;
+.page-footer__copyright{
+  @media (min-width: @desktop-width){
+    padding: 0;
   }
 }
-
 .page-footer__copyright--link {
+  display: block;
   color: @special-grey;
   font-family: @second_font;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 20px;
-  padding-right: 140px;
+  padding-top: 32px;
+  margin-left: -20px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 0;
-    padding-right: 22px;
-    padding-top: 31px;
+    margin-left: 514px;
+    margin-top: -56px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 980px;
-    padding-right: 22px;
+    padding: 0;
+    margin-left: 1078px;
+    margin-top: -25px;
   }
 
   &:hover {
@@ -152,8 +170,21 @@
 }
 
 .page-footer__svg {
+  margin-top: -23px;
+  margin-left: 234px;
+  display: block;
   fill: @color2;
-  margin-top: 22px;
+
+  @media (min-width: @tablet-width){
+    margin-top: -24px;
+    margin-left: 650px;
+  }
+
+  @media (min-width: @desktop-width){
+    margin-top: -26px;
+    margin-left: 1212px;
+  }
+
 
   &:hover {
     fill: @green-for-button;
@@ -163,32 +194,6 @@
     fill: @green-for-button;
     opacity: 0.3;
   }
-}
-
-.social {
-  padding-left: 93px;
-  border-bottom: 1px solid @grey;
-
-  @media (min-width: @tablet-width) {
-    display: inline-block;
-    border-bottom: none;
-    width: 129px;
-    height: 33px;
-    padding-top: 53px;
-    padding-left: 156px;
-  }
-
-  @media (min-width: @desktop-width) {
-    border-bottom: none;
-    width: 129px;
-    height: 33px;
-    padding-top: 44px;
-  }
-}
-
-.social__link {
-  display: block;
-  padding-right: 33px;
 }
 
 .page-footer__social {
@@ -200,31 +205,67 @@
 
   @media (min-width: @desktop-width) {
     display: inline-flex;
+    margin-left: -89px;
+    margin-top: 5px;
   }
 }
 
 .page-footer__copyright {
   @media (min-width: @tablet-width) {
-    display: inline-flex;
-    padding-left: 155px;
-    height: 34px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 464px;
-    display: inline-flex;
+
+
   }
 }
 
-.social__logo {
-  fill: @color2;
 
-  &:hover {
-    fill: @green-for-button;
-  }
 
-  &:active {
-    fill: @green-for-button;
-    opacity: 0.3;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

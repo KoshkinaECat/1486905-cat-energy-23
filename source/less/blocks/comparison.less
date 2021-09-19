@@ -1,0 +1,158 @@
+.comparison {
+  --comparison: 100%;
+  width: 310px;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 680px;
+  }
+}
+
+.comparison__top {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--comparison, 50%);
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+
+  @media (min-width: @desktop-width){
+        margin-top: -690px;
+  }
+}
+
+.comparison__skinny,
+.comparison__fat {
+  width: 310px;
+  min-width: 310px;
+  max-width: 310px;
+  height: auto;
+}
+
+.comparison__fat {
+  background-color: @grey2;
+
+  @media (min-width: @tablet-width){
+    background: linear-gradient(to bottom, @white 33%, @grey2 33%);
+  }
+}
+
+.comparison__controls {
+  position: relative;
+  width: 310px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 50px;
+
+  @media (min-width: @tablet-width){
+      padding: 23px 71px;
+      margin-left: -21px;
+      margin-top: -25px;
+  }
+}
+
+.comparison__controls::before,
+.comparison__controls::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.comparison__controls::before {
+  width: 84px;
+  height: 14px;
+  background: @color4;
+  left: 50%;
+  top: calc(50% - 7px);
+  transform: translateX(-50%);
+  border: 1px solid @grey3;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.comparison__controls::after {
+  width: 35px;
+  height: 6px;
+  background: @green-for-button;
+  border-radius: 6px;
+  left: calc(50% - 35px);
+  top: calc(50% - 3px);
+  transform: translateX(var(--psevdo-left));
+}
+
+.comparison__btn {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: @first_font;
+  text-transform: uppercase;
+  border: none;
+  background-color: @grey2;
+  padding-left: 11px;
+  padding-right: 0px;
+
+  @media (min-width: @tablet-width){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: -4px;
+    padding: 0;
+  }
+}
+
+.comparison__btn::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  top: calc(50% - 10px);
+  z-index: 1;
+}
+
+.comparison__btn--before::before {
+  left: 105px;
+}
+
+.comparison__btn--after::before {
+  left: 155px;
+}
+
+.comparison__input {
+  flex: 1 1 auto;
+  margin: 0 1em;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .comparison {
+    --comparison: 50%;
+  }
+
+  .comparison,
+  .comparison__skinny,
+  .comparison__fat,
+  .comparison__controls {
+    width: 708px;
+    max-width: 708px;
+    min-width: 690px;
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+    }
+  }
+
+  .comparison__input {
+    display: block;
+  }
+
+  .comparison__controls::before,
+  .comparison__controls::after {
+    display: none;
+  }
+
+  .comparison__btn::before {
+    display: none;
+  }
+}

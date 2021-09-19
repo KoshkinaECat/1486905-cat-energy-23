@@ -18,6 +18,8 @@
   color: @black;
   font-family: @first_font;
   font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -32,6 +34,8 @@
 
 .selection__div {
   display: block;
+  margin-top: 37px;
+  width: 226px;
 
   @media (min-width: @desktop-width) {
     display: inline-block;
@@ -41,6 +45,7 @@
 .selection__border {
   border-bottom: 1px solid @grey;
   margin: 0;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
@@ -74,7 +79,8 @@
   text-transform: uppercase;
   color: @special-grey;
   font-family: @first_font;
-  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -87,18 +93,46 @@
   }
 }
 
+.selection__form--weight{
+  width: 267px;
+  margin-top: -2px;
+}
+
+.selection__form--age{
+  width: 280px;
+  margin-top: -4px;
+}
+
 .selection__form--mail {
   position: relative;
+  padding-top: 18px;
 
   @media (min-width: @desktop-width) {
     display: inline;
   }
 }
 
+.selection__form--contact{
+  margin-top: 14px;
+}
+
 
 .selection__form--border {
   border: 1px solid @color1;
-  padding: 12px 20px;
+  padding: 11px 19px;
+  margin-left: 8px;
+}
+
+.selection__item--slim{
+  padding-left: 45px;
+}
+.selection__item--mass{
+  padding-left: 46px;
+  padding-top: 20px;
+}
+.selection__item--advice{
+ padding-left: 46px;
+ padding-top: 18px;
 }
 
 .selection__checkbox + label::before {
@@ -118,7 +152,6 @@
   background-image: url("/img/vector.svg");
   background-repeat: no-repeat;
   left: 6px;
-  top: 5px;
 }
 
 .selection__list {
@@ -126,6 +159,7 @@
   padding: 0;
   border-bottom: 1px solid @color1;
   font-family: @first_font;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     width: 628px;
@@ -146,13 +180,12 @@
 
 .selection__item {
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   color: @black3;
-  margin-bottom: 17px;
-  padding-left: 35px;
   font-family: @first_font;
   position: relative;
+  padding-top: 22px;
+  padding-left: 46px;
 }
 
 .selection__products {
@@ -176,6 +209,8 @@
   line-height: 26px;
   color: @black;
   font-family: @first_font;
+
+  font-weight: normal;
 }
 
 .selection__input {
@@ -184,6 +219,7 @@
   text-transform: uppercase;
   color: @special-grey;
   padding: 12px 20px;
+  font-family: @first_font;
 }
 
 .selection__input--mail {
@@ -191,7 +227,8 @@
   background-image: url("/img/icon_email.png");
   background-repeat: no-repeat;
   background-position: right center;
-  width: 100%;
+  margin-left: 3px;
+  width: 211px;
 
   @media (min-width: @tablet-width) {
     background-position: right 20px center;
@@ -203,7 +240,7 @@
   background-image: url("/img/phone.svg");
   background-repeat: no-repeat;
   background-position: right center;
-  width: 100%;
+  width: 204px;
 
   @media (min-width: @tablet-width) {
     background-position: right 20px center;
@@ -211,10 +248,12 @@
 }
 
 .selection__input--textarea {
-  height: 150px;
+  height: 172px;
   width: 100%;
   font-family: @first_font;
   border: 1px solid @color1;
+  padding-top: 30px;
+  padding-left: 14px;
 }
 
 
@@ -276,6 +315,9 @@
   background-color: @green-for-button;
   font-family: @first_font;
   padding: 7px 44px;
+  width: 100%;
+  margin-top: 11px;
+  margin-bottom: 7px;
 }
 
 .selection__required {
@@ -283,4 +325,5 @@
   font-size: 14px;
   line-height: 16px;
   color: @black;
+  margin-left: 62px;
 }

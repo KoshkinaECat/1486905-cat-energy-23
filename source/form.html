@@ -47,26 +47,26 @@
       <form method="GET" action="https://echo.htmlacademy.ru">
         <p class="selection__form">Имя:*
           <input class="selection__form selection__form--border" type="text" name="name" placeholder="Барсик" required></p>
-        <p class="selection__form">Вес (кг):*
+        <p class="selection__form selection__form--weight">Вес (кг):*
           <input class="selection__form selection__form--border" type="number" name="weight" placeholder="7" required></p>
-        <p class="selection__form">Возраст (лет):
+        <p class="selection__form selection__form--age">Возраст (лет):
           <input class="selection__form selection__form--border" type="number" name="age" placeholder="7"></p>
       </form>
         </div>
         <h2 class="selection__header visually-hidden">Выбрать похудение или набор массы</h2>
         <form method="GET" action="https://echo.htmlacademy.ru">
         <ul class="selection__list">
-          <li class="selection__item">
+          <li class="selection__item selection__item--slim">
             <input class="visually-hidden selection__input" type="radio" value="slim" name="choice" id="slim" checked>
-            <label for="slim">Похудение</label>
+            <label class="selection__label selection__label--slim" for="slim">Похудение</label>
           </li>
-          <li class="selection__item">
+          <li class="selection__item selection__item--mass">
             <input class="visually-hidden selection__input" type="radio" value="mass" name="choice" id="mass">
-            <label for="mass">Набор массы</label>
+            <label class="selection__label selection__label--mass" for="mass">Набор массы</label>
           </li>
-          <li class="selection__item">
+          <li class="selection__item selection__item--advice">
             <input class="visually-hidden selection__input" type="radio" value="advice" name="choice" id="advice">
-            <label for="advice">Не знаю (нужен ваш совет)</label>
+            <label class="selection__label selection__label--advice" for="advice">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </form>
@@ -79,7 +79,7 @@
         <p class="selection__form selection__form--contact">Телефон:*
           <input class="selection__input selection__input--contact" type="tel" name="tel" placeholder="8 (960) 900-60-90" required></p>
 
-        <h2 class="section__header selection__header--contacts">Комментарий</h2>
+        <h2 class="selection__header selection__header--contacts">Комментарий</h2>
         <p class="selection__form">
           <textarea class="selection__input selection__input--textarea" name="message" placeholder="Расскажите обо всех повадках кота"></textarea></p>
 
@@ -107,7 +107,7 @@
           </ul>
 
           <button class="selection__button" type="submit">Отправить заявку</button>
-          <p class="selection__required">*-Обязательные поля</p>
+          <p class="selection__required">* — Обязательные поля</p>
       </form>
     </div>
     </section>

@@ -1,9 +1,11 @@
 .instruction {
   background-color: @white;
   margin-left: 0;
+  margin-bottom: 60px;
 
   @media (min-width: @tablet-width) {
     height: 770px;
+    margin-bottom: -2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,13 +23,14 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 60px;
     line-height: 60px;
     margin-top: 68px;
-    margin-bottom: 33px;
+    margin-bottom: 18px;
   }
 }
 
@@ -37,22 +40,23 @@
 
 .instruction__list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
+  padding-top: 2px;
 }
 
 @media (min-width: @tablet-width) {
   .instruction__list {
     display: grid;
-    grid-template-columns: 249px 249px;
-    row-gap: 37px;
+    grid-template-columns: 230px 246px;
+    row-gap: 18px;
     column-gap: 153px;
+    padding-top: 16px;
   }
 
   @media (min-width: @desktop-width) {
     .instruction__list {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 79px;
+      grid-template-columns: 230px 246px 1fr 1fr;
+      gap: 96px;
     }
   }
 }
@@ -67,6 +71,15 @@
   // width: 256px;
   height: 60px;
   padding-left: 80px;
+
+  @media (min-width: @tablet-width){
+    padding-top: 153px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+  }
 }
 
 .instruction__item--leaf {
@@ -75,13 +88,18 @@
 
 
   @media (min-width: @tablet-width) {
-    background-image: url("/img/one.png");
-    background-repeat: no-repeat;
-    height: 280px;
-    width: 230px;
-    padding-top: 152px;
-    padding-right: 29px;
-    text-align: inherit;
+   background-image: url(/img/one.png);
+   background-repeat: no-repeat;
+   height: 280px;
+   /* width: 230px; */
+   padding-top: 153px;
+   /* padding-right: 29px; */
+   /* text-align: inherit; */
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   padding-left: 2px;
   }
 }
 
@@ -112,6 +130,11 @@
     padding-top: 151px;
     text-align: inherit;
   }
+
+  @media (min-width: @desktop-width){
+    margin-left: -19px;
+    display: block;
+  }
 }
 
 .instruction__item--alarm {
@@ -126,5 +149,10 @@
     width: 249px;
     padding-top: 151px;
     text-align: inherit;
+  }
+
+  @media (min-width: @desktop-width){
+    display: block;
+    margin-left: -17px;
   }
 }

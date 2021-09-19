@@ -14,7 +14,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-image: none;
+    color: @black;
+    background-image: url("/img/can-tablet.png");
+    background-repeat: no-repeat;
+    height: 609px;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 30px;
+    z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,10 +37,8 @@
   background-position: center top;
 
   @media (min-width: @tablet-width) {
-    color: @black;
-    background-image: url("/img/can-tablet.png");
-    background-repeat: no-repeat;
-    height: 609px;
+  background-image: none;
+  margin-bottom: 321px
   }
 
   @media (min-width: @desktop-width) {
@@ -62,6 +67,8 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
+    margin-top: 22px;
+    margin-left: 117px;
   }
 
   @media (min-width: @desktop-width) {
@@ -69,8 +76,8 @@
     width: 414px;
     height: 120px;
     color: @black;
-    position: absolute;
-    top: 50px;
+    margin-top: 179px;
+    margin-left: 195px;
   }
 }
 
@@ -84,21 +91,18 @@
   @media (min-width: @tablet-width) {
     text-align: left;
     width: 283px;
-    height: 20px;
     color: @black;
     font-size: 20px;
     line-height: 20px;
-    top: 152px;
-    position: absolute;
+    margin-top: 68px;
+    margin-left: 119px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    text-align: left;
-    width: 283px;
     height: 20px;
     color: @black;
-    position: absolute;
-    top: 260px;
+    margin-left: 195px;
   }
 }
 
@@ -123,19 +127,20 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    bottom: 178px;
+    bottom: 134px;
     font-size: 20px;
     line-height: 20px;
     padding: 14px 26px;
     width: 244px;
     height: 54px;
+    left: 120px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    top: 315px;
-    margin-left: 90px;
+    top: 439px;
+    margin-left: 75px;
     width: 244px;
     height: 54px;
-  }
+}
 }
